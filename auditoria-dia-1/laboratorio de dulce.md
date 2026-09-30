@@ -26,4 +26,11 @@ vs code su version es la "instalador de usuario.x64
 y la de Git hay variedad pero la que instalamos fue la que estaba con este codigo 
 winget install --id Git.Git -e --source winget
 pero su version es ( 2.55.0(5) ) x64 de Git para Windows que fue lanzada hacer 36 dias aproximandamente y hay muchas mas descargas independientes.
- # DIAGRAMA 
+ # DIAGRAMA
+ ![alt text](<Gráfica Mapa Mental Infantil Colorido -1.jpg>)
+ # CAPTUTAS 
+ ![alt text](<CAPTURAS DIA 1.png>)
+ # UN PROBLEMA ENCONTRADO 
+ El problema encontrado fue que al principio es que no me dejaba instalar las aplicaciones pero pedi ayuda y me ayudaron, tambien el problema esque estba en ingles todo,ingles del todo no lo se pero despues lo pase todo a español y se me resulto mas facil.
+ ![alt text](image-5.png)
+ 
