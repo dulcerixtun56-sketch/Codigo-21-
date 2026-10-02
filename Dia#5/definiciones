@@ -1,0 +1,19 @@
+## Definciones git 
+# ADD:
+sire para preparar cambios  que quiero guardar en el siguiente commit 
+![alt text](image.png)
+# COMMIT:
+guarda una version de los cambios que hace el proyecto 
+![alt text](image-1.png)
+# BRANCH:
+permite crear una rama independiente para trabajar sin modificar directamente 
+![alt text](image-2.png)
+# MERGE:
+unos cambios de una rama a otra 
+![alt text](image-3.png)
+# PULL:
+trae desde GitHub los cambios que existen en un repositorio remoto
+![alt text](image-4.png)
+# PUSH:
+envia mis cambios desde mi computadora hacia GitHub .
+![alt text](image-5.png)

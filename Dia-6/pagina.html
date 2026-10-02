@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Hoy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        /* ENCABEZADO */
+        header {
+            background-color: #14213d;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #ddd;
+        }
+
+        /* MENÚ */
+        nav {
+            background-color: #0b132b;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            padding: 15px;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #fca311;
+        }
+
+        /* CONTENEDOR */
+        .contenedor {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .titulo {
+            border-left: 6px solid #fca311;
+            padding-left: 12px;
+            margin-bottom: 20px;
+        }
+
+        /* NOTICIA PRINCIPAL */
+        .principal {
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .principal img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .principal h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .principal p {
+            line-height: 1.6;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #2811fc;
+            color: white;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* NOTICIAS */
+        .noticias {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .contenido {
+            padding: 18px;
+        }
+
+        .contenido h3 {
+            margin-bottom: 10px;
+        }
+
+        .contenido p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            margin-top: 40px;
+            background-color: #14213d;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* CELULAR */
+        @media (max-width: 800px) {
+            .principal {
+                grid-template-columns: 1fr;
+            }
+
+            .noticias {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>NOTICIAS DE HOY </h1>
+        <p>La información más importante de Guatemala y el mundo </p>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Guatemala</a>
+        <a href="#">Internacional</a>
+        <a href="#">Tecnología</a>
+        <a href="#">Deportes</a>
+        <a href="#">Moda</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <h2 class="titulo">Noticia principal</h2>
+
+        <section class="principal">
+
+            <img src="depositphotos_6898984-stock-photo-worldwide-news-background.jpg"
+                 alt="Periódico">
+            <div>
+                <h2>Las noticias más importantes del día</h2>
+
+                <p>
+                    Conoce las principales noticias y acontecimientos
+                    que están marcando la actualidad nacional e internacional.
+                </p>
+
+                <a href="#" class="boton">Leer más</a>
+            </div>
+
+        </section>
+
+
+        <h2 class="titulo">Últimas noticias</h2>
+
+        <section class="noticias">
+
+            <article class="tarjeta">
+
+                <img src="images.jpg" >
+                Noticias
+
+                <div class="contenido">
+                    <h3>Actualidad nacional</h3>
+                    <p>
+                        Conoce las noticias más recientes de Guatemala.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta">
+
+                <img src="tegnologia.jpg">
+                    Tecnología
+
+                <div class="contenido">
+                    <h3>Nuevas tecnologías</h3>
+                    <p>
+                        Los avances tecnológicos que están cambiando el mundo.
+                    </p>
+                </div>
+
+            </article>
+
+
+            <article class="tarjeta">
+
+                <img src="deportes.jpg" >
+                    Deportes
+
+                <div class="contenido">
+                    <h3>Noticias deportivas</h3>
+                    <p>
+                        Los acontecimientos más destacados del deporte en Guatemala o el mundo.
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Noticias Hoy | Todos los derechos son de Dulce Rixtun</p>
+    </footer>
+
+</body>
+</html>
